@@ -1,0 +1,85 @@
+/*BASIC styles*/
+.page{
+    padding: 1rem;
+}
+
+/*HEADER styles*/
+.header{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    background-color: #353839;
+    color: white;    
+}
+
+/*Avatar*/
+.avatar-container{
+    position: relative;
+}
+.avatar-wrapper{
+    padding: 0;   
+}
+.custom-avatar{
+    width: 100%;
+    height: auto;
+}
+.glasses{    
+    width: 5rem;
+    height: 2rem;
+    transform: translateY(-18.5rem) translateX(8.85rem);
+    transition: all .5s ease;
+    
+}
+.avatar-container:hover .glasses{
+    transform: translateY(5rem) translateX(0);   
+}
+
+/*Rotating icons*/
+.action-icons-list{
+    padding: 0;
+    display: flex;   
+    text-transform: uppercase;
+    justify-content: space-around;
+    list-style: square;
+}
+.icon-card{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+}
+
+.action-icon{   
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform .8s ease;
+}
+
+.action-icon-back{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.back-side-gif{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.icon-card:hover .action-icon-front{
+    transform: rotateY(-180deg);
+}
+.icon-card:hover .action-icon-back{
+    transform: rotateY(0);
+}
+/*Contacts*/
+.twitter:hover {
+    color: aqua;
+}
+.instagram:hover {
+    color:palevioletred;
+}
